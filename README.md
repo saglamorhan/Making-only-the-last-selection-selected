@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/saglamorhan/Order-summary-component.git]
-- Live Site URL: [https://saglamorhan.github.io/Order-summary-component/]
+- Solution URL: [https://github.com/saglamorhan/Making-only-the-last-selection-selected.git]
+- Live Site URL: [https://saglamorhan.github.io/interactive-rating-component/]
 
 ### Links
 
