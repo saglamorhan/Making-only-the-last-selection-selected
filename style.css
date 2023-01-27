@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /*Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+}
+/* state 1 card*/
+.card1 {
+  height: 27.3em;
+  width: 27.3em;
+  border-radius: 1.9em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgb(33, 39, 47), rgb(23, 30, 40));
+}
+.card1-container {
+  padding: 2.09em;
+  padding-right: 2.5em;
+  padding-top: 2.1em;
+}
+.star-icon {
+  display: inline-block;
+  background-color: rgb(38, 47, 56);
+  border: none;
+  border-radius: 50%;
+  width: 3.2em;
+  height: 3.2em;
+  margin-bottom: 2.2em;
+}
+.star-icon img {
+  width: 100%;
+  height: 100%;
+  padding: 1.05em;
+}
+.card1-container h1 {
+  color: var(--white);
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.015em;
+}
+.card1-container > p {
+  color: var(--medium-grey);
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.8em;
+}
+.rating-section-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating-button {
+  background-color: rgb(38, 47, 56);
+  border-radius: 50%;
+  border: none;
+  padding: 0.5em;
+  width: 3.4em;
+  height: 3.4em;
+  color: var(--medium-grey);
+  font-size: 1em;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+}
+.rating-button:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+  cursor: pointer;
+}
+.rating-button:active,
+.selected {
+  background-color: var(--orange);
+  cursor: pointer;
+  color: var(--white);
+  cursor: pointer;
+}
+.btn-submit {
+  display: block;
+  width: 100%;
+  height: 3em;
+  border: none;
+  border-radius: 1.9em;
+  margin-top: 2.1em;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 1em;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.btn-submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* Thank you Section*/
+/* state 2 card*/
+.card2 {
+  display: none;
+  height: 27.3em;
+  width: 27.3em;
+  border-radius: 1.9em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgb(33, 39, 47), rgb(23, 30, 40));
+}
+.card2-container {
+  padding: 2.09em;
+  padding-right: 2.5em;
+  padding-top: 3em;
+}
+.do-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.rating-info {
+  background-color: rgb(38, 47, 56);
+  display: inline-block;
+  /* padding: 0.5em 0.3em 1em 1em; */
+  padding: 0.4em 1em;
+  border-radius: 2em;
+  margin: 2.1em 0;
+}
+.rating-info-content {
+  color: var(--orange);
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+}
+.thanks-title {
+  color: var(--white);
+  margin-bottom: 0.4em;
+  font-size: 1.75em;
+  letter-spacing: 0.03em;
+}
+.content {
+  color: var(--medium-grey);
+  text-align: center;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  .card1,
+  .card2 {
+    height: 29em;
+    width: 27em;
+  }
+}
